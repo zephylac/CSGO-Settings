@@ -1,3 +1,3 @@
 # csgo-autoexec
-My csgo autoexec\n
+My csgo autoexec;
 Here you can download my whole csgo autoexec
