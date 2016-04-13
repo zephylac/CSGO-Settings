@@ -1,4 +1,10 @@
-# csgo-autoexec
-My csgo autoexec
+# CSGO Settings
+Here is all my CSGO setting
 
-Here you can download my whole csgo autoexec
+You can download all my settings including:
+
+  Autoexec
+  Binds
+  Videosettings
+  General config
+
