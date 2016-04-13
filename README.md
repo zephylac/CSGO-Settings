@@ -11,3 +11,4 @@ You can download all my settings including:
   
   ♦ General config
 
+  ♦ Crosshair
