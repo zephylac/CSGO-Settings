@@ -3,11 +3,11 @@ Here is all my CSGO setting
 
 You can download all my settings including:
 
-  Autoexec
+  ♦ Autoexec
   
-  Binds
+  ♦ Binds
   
-  Videosettings
+  ♦ Videosettings
   
-  General config
+  ♦ General config
 
