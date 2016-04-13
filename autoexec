@@ -1,0 +1,115 @@
+//Settings miscancellious
+fps_max 0
+bind "p" "noclip"
+mm_dedicated_search_maxping 70
+cl_interp 0
+cl_interp_ratio 3
+rate 128000
+cl_updaterate 128
+cl_cmdrate 128
+
+//***********************************************
+bind "KP_INS" "buy vesthelm; buy defuser;buy m4a1_silencer;buy ak47; buy tec9; buy fn57;buy flashbang; buy hegrenade; buy smokegrenade
+
+// **********************************************
+//Show netgraph when checking scoreboard
+
+net_graph "1"
+net_graphheight "9999"
+alias "+scorenet" "+showscores; net_graphheight 0"
+alias "-scorenet" "-showscores; net_graphheight 9999"
+bind "TAB" "+scorenet"
+
+//***********************************************
+//RADAR
+
+cl_radar_scale 0.37
+bind "f6" "maptoggle"
+alias "maptoggle" "mapon"
+alias "mapon" "cl_radar_scale 0.7; say_team Zoom x0.7;playvol common\beep 0.5; alias maptoggle mapoff"
+alias "mapoff" "cl_radar_scale  0.37; say_team Zoom x0.4;playvol common\warning 0.5; alias maptoggle mapon"
+
+//***********************************************
+//Clutch mode
+
+bind "f8" "clutchtoggle"
+alias "clutchtoggle" "clutchon"
+alias "clutchon" "voice_enable 0; ignoremsg; ignoremsg; say_team Clutch mode: ON (text & voice chat are disabled); alias clutchtoggle clutchoff"
+alias "clutchoff" "voice_enable 0.5; ignoremsg; say_team Clutch mode: OFF (text & voice chat are enabled); alias clutchtoggle clutchon"
+
+//***********************************************
+//Display Damage with Switch Script
+
+alias displaydamage "displaydamage_on"
+alias displaydamage_on "con_filter_text Damage Given To; con_filter_text_out Player:; con_filter_enable 2; developer 1; playvol buttons\blip1 0.5; alias displaydamage "displaydamage_off""
+alias displaydamage_off "con_filter_enable 0; developer 0; playvol buttons\blip2 0.5; alias displaydamage "displaydamage_on""
+bind "f5" "displaydamage"
+
+//***********************************************
+//Show Help Lines
+
+//alias "-crosshairsmoke" "cl_crosshairsize 10 ;cl_crosshairdot 1 ;cl_crosshairgap 1"
+//alias "+crosshairsmoke" "cl_crosshairsize 1337 ;cl_crosshairdot 1 ;cl_crosshairgap 10"
+//bind"f11" "+crosshairsmoke"
+
+//***********************************************
+//Jump Throw Script
+
+alias "+jumpthrow" "+jump;-attack"
+alias "-jumpthrow" "-jump"
+bind "h" "+jumpthrow"
+
+//***********************************************
+//Disable in-game voice + no rebinds needed
+
+alias "disablevoice" "voice_chat"
+alias "voice_chat" "chat_1"
+alias "chat_1" "voice_enable 1; playvol buttons\blip1 0.5; alias voice_chat chat_0"
+alias "chat_0" "voice_enable 0; playvol buttons\blip2 0.5; alias voice_chat chat_1"
+
+//***********************************************
+//Show crosshair Settings
+
+alias "a1" clear
+alias "a2" echo "*********************************************";
+alias "a3" echo "YOUR CURRENT CROSSHAIR SETTINGS;"
+alias "a4" echo "*********************************************";
+alias "a5" developer 2
+alias "a6" con_filter_enable 1
+alias "a7" con_filter_text cl_crosshair
+alias "a8" host_writeconfig //
+alias "a9" con_filter_text cl_fix
+alias "a10" host_writeconfig //
+alias "a11" developer 0
+alias "a12" con_filter_enable 0
+alias "a13" showconsole
+alias "showcrosshair" "a1;a2;a3;a4;a5;a6;a7;a8;a9;a10;a11;a12;a13"
+bind f7 "showcrosshair"
+
+//********************************************************************************************
+
+//********************************************* 
+//BACKUP OF MY CROSSHAIR
+//********************************************* 
+//*cl_crosshair_drawoutline "1"
+cl_crosshair_dynamic_maxdist_splitratio "0.35"
+cl_crosshair_dynamic_splitalpha_innermod "1"
+cl_crosshair_dynamic_splitalpha_outermod "0.5"
+cl_crosshair_dynamic_splitdist "7"
+cl_crosshair_outlinethickness "1"
+cl_crosshairalpha "200"
+cl_crosshaircolor "4"
+cl_crosshaircolor_b "50"
+cl_crosshaircolor_g "250"
+cl_crosshaircolor_r "50"
+cl_crosshairdot "1"
+cl_crosshairgap "1"
+cl_crosshairgap_useweaponvalue "0"
+cl_crosshairscale "0"
+cl_crosshairsize "10"
+cl_crosshairstyle "1"
+cl_crosshairthickness "0.5"
+cl_crosshairusealpha "1"
+cl_fixedcrosshairgap "3"*/
+
+//********************************************************************************************
